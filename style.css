@@ -4,6 +4,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
 body {
   font-family: 'Segoe UI', sans-serif;
   color: #1e1e1e;
@@ -20,6 +24,13 @@ h1, h2, h3 {
 }
 h2 {
   margin-bottom: 1rem;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
 }
 
 /* Background Animation */
@@ -61,7 +72,7 @@ h2 {
   font-size: 1rem;
 }
 
-/* Navigation Bar - Clean and Responsive */
+/* Navigation Bar */
 .nav-bar {
   display: flex;
   flex-wrap: wrap;
@@ -69,6 +80,8 @@ h2 {
   align-items: center;
   padding: 10px 20px;
   gap: 8px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 .nav-bar a {
   color: #5a3e00;
@@ -86,12 +99,10 @@ h2 {
 /* Sections */
 section {
   padding: 2rem;
-  max-width: 900px;
-  margin: auto;
-  margin-top: 2rem;
   background: rgba(255, 255, 255, 0.85);
   border-radius: 15px;
   box-shadow: 0 0 10px #00000025;
+  margin: 2rem 0;
 }
 ul {
   list-style: none;
@@ -145,7 +156,6 @@ footer {
   text-align: center;
   padding: 1rem;
   background: rgba(255, 255, 255, 0.5);
-  margin-top: 2rem;
   font-size: 0.9rem;
 }
 
@@ -157,10 +167,6 @@ footer {
   .profile-img {
     width: 100px;
     height: 100px;
-  }
-  section {
-    padding: 1.5rem;
-    margin: 1rem;
   }
 }
 @media screen and (max-width: 480px) {
