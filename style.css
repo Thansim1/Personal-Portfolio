@@ -63,24 +63,30 @@ h2 {
   font-size: 1rem;
 }
 
-/* Navigation */
+/* Navigation – fixed for Android and mobile */
 nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 12px;
+  gap: 16px;
   margin-top: 1rem;
   padding: 0 1rem;
+  max-width: 95%;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 nav a {
   font-weight: 600;
   font-size: 1rem;
   color: #5a3e00;
-  padding: 8px 12px;
+  padding: 10px 14px;
   border-radius: 6px;
   transition: background 0.3s ease;
   white-space: nowrap;
+  text-align: center;
 }
+
 nav a:hover {
   background-color: rgba(0, 0, 0, 0.08);
 }
@@ -160,13 +166,9 @@ footer {
     width: 100px;
     height: 100px;
   }
-  nav {
-    flex-direction: row;
-    gap: 8px;
-  }
   nav a {
     font-size: 0.95rem;
-    padding: 6px 10px;
+    padding: 8px 10px;
   }
   section {
     padding: 1.5rem;
@@ -186,7 +188,7 @@ footer {
     display: block;
     width: 100%;
     text-align: center;
-    margin: 4px 0;
+    margin: 5px 0;
   }
   .profile-img {
     width: 90px;
