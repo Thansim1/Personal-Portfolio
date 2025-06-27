@@ -61,13 +61,15 @@ h2 {
   font-size: 1rem;
 }
 
-/* Navigation */
+/* FINAL FIX: Horizontal Nav with | Separator */
 nav {
   display: flex;
-  flex-wrap: nowrap;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
   overflow-x: auto;
   white-space: nowrap;
+  gap: 10px;
   padding: 10px 1rem;
   scrollbar-width: none;
 }
@@ -75,13 +77,14 @@ nav::-webkit-scrollbar {
   display: none;
 }
 nav a {
+  display: inline-block;
   font-weight: 600;
   font-size: 1rem;
   color: #5a3e00;
-  padding: 10px 14px;
+  padding: 8px 10px;
   text-align: center;
-  white-space: nowrap;
   position: relative;
+  white-space: nowrap;
 }
 nav a::after {
   content: "|";
@@ -166,10 +169,6 @@ footer {
   .profile-img {
     width: 100px;
     height: 100px;
-  }
-  nav a {
-    font-size: 0.95rem;
-    padding: 8px 10px;
   }
   section {
     padding: 1.5rem;
