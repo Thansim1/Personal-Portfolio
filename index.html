@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Abdul Rahim Thansim | Portfolio</title>
+  <!-- Style file is in same folder -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="background"></div>
+
+  <header class="hero-section">
+    <!-- Image is in same folder -->
+    <img src="profilebc.jpeg" alt="Profile Picture" class="profile-img">
+    <h1>V. Abdul Rahim Thansim</h1>
+    <p class="tagline">Web Developer | AI Explorer | Tech Enthusiast</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I’m a B.Tech Computer Science student at BSA Crescent Institute. I specialize in creating web applications and exploring AI technologies. I believe in building solutions that are smart, simple, and powerful.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li><strong>Languages:</strong> C, C++, Python, Java, SQL, HTML, CSS, Java Script</li>
+      <li><strong>Concepts:</strong> OOP, Data Structures, Networking</li>
+      <li><strong>Tools:</strong> VS Code, Git, Android Studio</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="card">
+      <h3>Smart Reminder Bot</h3>
+      <p>A WhatsApp-integrated reminder system using Node.js, MongoDB & Twilio API.</p>
+    </div>
+    <div class="card">
+      <h3>Basic Compass App</h3>
+      <p>Android app that uses the magnetometer and accelerometer to simulate a compass in real time.</p>
+    </div>
+  </section>
+
+  <section id="certificates">
+    <h2>Certificates</h2>
+    <div class="card">
+      <h3>Advanced C++ - IIT Bombay</h3>
+      <p>Score: 70%</p>
+    </div>
+    <div class="card">
+      <h3>Linux - IIT Bombay</h3>
+      <p>Score: 86.67%</p>
+    </div>
+    <div class="card">
+      <h3>RDBMS PostgreSQL - IIT Bombay</h3>
+      <p>Score: 97.5%</p>
+    </div>
+    <div class="card">
+      <h3>Python 3.4.3 - IIT Bombay</h3>
+      <p>Score: 90%</p>
+    </div>
+    <div class="card">
+        <h3>Computer Networks - Mindluster</h3>
+        <p>Course Completion</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <form onsubmit="return handleSubmit(event)">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <p>📞 +91 9791400929 | 📧 <a href="mailto:abdulrahimthansim@gmail.com">abdulrahimthansim@gmail.com</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Abdul Rahim Thansim. Built with 💖 and JavaScript</p>
+  </footer>
+
+  <!-- Script file is in same folder -->
+  <script src="script.js"></script>
+</body>
+</html>
