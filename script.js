@@ -4,10 +4,12 @@ function handleSubmit(event) {
   alert(`Thanks ${name}, your message has been received!`);
 }
 
-// Fix: Scroll nav to left on mobile to show 'About' first
-window.addEventListener('load', () => {
+// Fix nav auto-scroll bug on Android
+function scrollNavToStart() {
   const nav = document.querySelector('nav');
   if (nav) {
     nav.scrollLeft = 0;
   }
-});
+}
+window.addEventListener('load', scrollNavToStart);
+window.addEventListener('resize', scrollNavToStart);
