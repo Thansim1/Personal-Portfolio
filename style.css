@@ -61,16 +61,16 @@ h2 {
   font-size: 1rem;
 }
 
-/* Navigation (final fix: no leading | and About always shown) */
+/* Navigation */
 nav {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   overflow-x: auto;
   white-space: nowrap;
-  gap: 0;
-  padding: 10px 1rem;
+  padding: 10px 1rem 10px 16px; /* ✅ fixed: added left padding */
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
   scrollbar-width: none;
 }
 nav::-webkit-scrollbar {
@@ -78,16 +78,16 @@ nav::-webkit-scrollbar {
 }
 nav a {
   display: inline-block;
+  scroll-snap-align: start;
   font-weight: 600;
   font-size: 1rem;
   color: #5a3e00;
   padding: 8px 12px;
-  position: relative;
   white-space: nowrap;
+  position: relative;
   text-align: center;
 }
-/* Add '|' before all except the first link */
-nav a:not(:first-child)::before {
+nav a:not(:first-of-type)::before {
   content: "|";
   margin-right: 10px;
   color: #5a3e00;
