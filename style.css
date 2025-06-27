@@ -61,35 +61,25 @@ h2 {
   font-size: 1rem;
 }
 
-/* Navigation */
-nav {
+/* Navigation Bar - Clean and Responsive */
+.nav-bar {
   display: flex;
-  justify-content: flex-start;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
-  overflow-x: auto;
-  white-space: nowrap;
-  padding: 10px 1rem 10px 16px; /* ✅ fixed: added left padding */
-  scroll-behavior: smooth;
-  scroll-snap-type: x mandatory;
-  scrollbar-width: none;
+  padding: 10px 20px;
+  gap: 8px;
 }
-nav::-webkit-scrollbar {
-  display: none;
-}
-nav a {
-  display: inline-block;
-  scroll-snap-align: start;
+.nav-bar a {
+  color: #5a3e00;
   font-weight: 600;
   font-size: 1rem;
-  color: #5a3e00;
-  padding: 8px 12px;
-  white-space: nowrap;
+  text-decoration: none;
   position: relative;
-  text-align: center;
 }
-nav a:not(:first-of-type)::before {
+.nav-bar a:not(:last-child)::after {
   content: "|";
-  margin-right: 10px;
+  margin-left: 8px;
   color: #5a3e00;
 }
 
