@@ -4,12 +4,10 @@ function handleSubmit(event) {
   alert(`Thanks ${name}, your message has been received!`);
 }
 
-// Scroll nav fully left to show About on Android
+// ✅ Fix: Force nav to start from left on load & resize (for Android)
 function scrollNavToStart() {
   const nav = document.querySelector('nav');
-  if (nav) {
-    nav.scrollLeft = 0;
-  }
+  if (nav) nav.scrollLeft = 0;
 }
 window.addEventListener('load', scrollNavToStart);
 window.addEventListener('resize', scrollNavToStart);
