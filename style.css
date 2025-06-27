@@ -61,7 +61,7 @@ h2 {
   font-size: 1rem;
 }
 
-/* FINAL FIX: Horizontal Nav with | Separator */
+/* Navigation (final fix: no leading | and About always shown) */
 nav {
   display: flex;
   flex-direction: row;
@@ -69,7 +69,7 @@ nav {
   align-items: center;
   overflow-x: auto;
   white-space: nowrap;
-  gap: 10px;
+  gap: 0;
   padding: 10px 1rem;
   scrollbar-width: none;
 }
@@ -81,18 +81,16 @@ nav a {
   font-weight: 600;
   font-size: 1rem;
   color: #5a3e00;
-  padding: 8px 10px;
-  text-align: center;
+  padding: 8px 12px;
   position: relative;
   white-space: nowrap;
+  text-align: center;
 }
-nav a::after {
+/* Add '|' before all except the first link */
+nav a:not(:first-child)::before {
   content: "|";
-  margin-left: 10px;
+  margin-right: 10px;
   color: #5a3e00;
-}
-nav a:last-child::after {
-  content: "";
 }
 
 /* Sections */
