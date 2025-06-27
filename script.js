@@ -4,7 +4,7 @@ function handleSubmit(event) {
   alert(`Thanks ${name}, your message has been received!`);
 }
 
-// Fix nav auto-scroll bug on Android
+// Scroll nav fully left to show About on Android
 function scrollNavToStart() {
   const nav = document.querySelector('nav');
   if (nav) {
